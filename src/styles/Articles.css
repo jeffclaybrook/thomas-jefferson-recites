@@ -1,0 +1,67 @@
+.articles header {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ background: url("https://thomasjeffersonrecites.s3.amazonaws.com/hero-3.webp") no-repeat center center / cover;
+ block-size: 100vh;
+}
+
+.artcles header::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ box-shadow: inset 120px 100px 250px rgba(0,0,0,0.5), inset -120px -100px 250px rgba(0,0,0,0.5);
+}
+
+.articles header .column {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 1.5rem;
+ position: absolute;
+ inset-inline-start: 10%;
+}
+
+.articles header h1 {
+ font-weight: 400;
+ color: #ffffff;
+}
+
+.articles header h1 strong {
+ color: #c3a46a;
+}
+
+.articles section {
+ display: flex;
+ flex-direction: column;
+ padding-block: 4rem;
+ padding-inline: .75rem;
+}
+
+.articles img {
+ display: block;
+ margin-inline: auto;
+ border-radius: 1rem;
+ margin-block-end: 4rem;
+}
+
+.articles section {
+ max-inline-size: 700px;
+ padding-inline: 1rem;
+ margin-inline: auto;
+}
+
+.articles section h2 {
+ font-size: 1.5rem;
+ margin-block-end: .5rem;
+}
+
+.articles section h3 {
+ font-size: 1rem;
+ margin-block-end: 2rem;
+}
+
+.articles section p {
+ margin-block-end: 2rem;
+}

@@ -1,0 +1,29 @@
+footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-block: 2rem;
+ background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+footer > a {
+ margin-block-end: 2rem;
+}
+
+footer ul {
+ display: flex;
+ gap: 1.5rem;
+ list-style: none;
+ margin-block-end: 2rem;
+}
+
+footer li a {
+ color: #ffffff;
+ font-size: 1.125rem;
+}
+
+footer p {
+ color: #ffffff;
+ font-size: .875rem;
+}

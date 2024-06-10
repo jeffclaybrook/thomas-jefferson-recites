@@ -1,0 +1,100 @@
+.contact header {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ background: url("https://thomasjeffersonrecites.s3.amazonaws.com/hero-4.webp") no-repeat center center / cover;
+ block-size: 100vh;
+}
+
+.contact header::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ box-shadow: inset 120px 100px 250px rgba(0,0,0,0.5), inset -120px -100px 250px rgba(0,0,0,0.5);
+}
+
+.contact header .column {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 1.5rem;
+ position: absolute;
+ inset-inline-start: 10%;
+}
+
+.contact header h1 {
+ font-weight: 400;
+ color: #ffffff;
+}
+
+.contact header h1 strong {
+ color: #c3a46a;
+}
+
+.contact section {
+ display: flex;
+ flex-direction: column;
+ padding-block: 4rem;
+ padding-inline: .75rem;
+}
+
+.contact form {
+ max-inline-size: 500px;
+ inline-size: 100%;
+ padding-inline: 1rem;
+ margin-inline: auto;
+}
+
+.contact form div {
+ display: block;
+ inline-size: 100%;
+ min-block-size: 4rem;
+ margin-block-end: 1rem;
+}
+
+.contact form input {
+ display: block;
+ block-size: 3.75rem;
+ inline-size: 100%;
+ padding: .75rem .75rem .875rem;
+ letter-spacing: .015em;
+ font-size: 1rem;
+ font-weight: 450;
+ border: 1.5px solid rgb(189, 200, 207);
+ border-radius: .325rem;
+ font-family: "Roboto Slab", system-ui, sans-serif;
+}
+
+.contact form textarea {
+ display: block;
+ block-size: 10rem;
+ inline-size: 100%;
+ padding: .75rem .75rem .875rem;
+ letter-spacing: .015em;
+ font-size: 1rem;
+ font-weight: 450;
+ border: 1.5px solid rgb(189, 200, 207);
+ border-radius: .325rem;
+ font-family: "Roboto Slab", system-ui, sans-serif;
+}
+
+.contact form button {
+ display: block;
+ text-align: center;
+ margin-inline: auto;
+ font-size: 1.125rem;
+ color: rgb(249, 252, 255);
+ background: rgb(70, 94, 138);
+ border: 1px solid rgb(70, 94, 138);
+ border-radius: .325rem;
+ font-weight: 450;
+ padding: .65rem 1.25rem;
+ transition: background-color 0.15s linear 0s, border-color 0.15s linear 0s;
+}
+
+.contact form button:hover {
+ background-color: rgb(121, 145, 192);
+ border-color: rgb(121, 145, 192);
+ color: rgb(255, 255, 255);
+}

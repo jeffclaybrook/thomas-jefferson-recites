@@ -1,0 +1,45 @@
+.home header {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ background: url("https://thomasjeffersonrecites.s3.amazonaws.com/hero.webp") no-repeat right center / cover;
+ block-size: 100vh;
+}
+
+.home header::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ box-shadow: inset 120px 100px 250px rgba(0,0,0,0.5), inset -120px -100px 250px rgba(0,0,0,0.5);
+}
+
+.home header .column {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 1.5rem;
+ position: absolute;
+ inset-inline-start: 10%;
+}
+
+.home header h1 {
+ font-weight: 400;
+ color: #ffffff;
+}
+
+.home header h1 strong {
+ color: #c3a46a;
+}
+
+.home section {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-block: 4rem;
+}
+
+.home video {
+ display: block;
+ border-radius: 1rem;
+}
